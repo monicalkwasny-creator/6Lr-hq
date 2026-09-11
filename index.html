@@ -503,29 +503,29 @@
 <script>
   // ---- Real data, seeded from the 9/8 and 9/9 6LR homework boards ----
   const DATED_ITEMS = [
-    { date: "2026-09-11", subject: "History", text: "Chapter 3 Section 1 reading due", type: "homework" },
-    { date: "2026-09-11", subject: "English", text: "Unit 1 Test: Grammar and Poetry", type: "test" },
-    { date: "2026-09-11", subject: "Pre-Algebra", text: "Quiz, covers sections 2-5 through 2-10", type: "quiz" },
     { date: "2026-09-14", subject: "All Classes", text: "Picture Day", type: "schedule" },
     { date: "2026-09-14", subject: "History", text: "Chapter 3 Section 2 reading due", type: "homework" },
     { date: "2026-09-14", subject: "Biology", text: "Comp Check", type: "quiz" },
     { date: "2026-09-16", subject: "Chemistry", text: "Density Quiz", type: "quiz" },
     { date: "2026-09-16", subject: "History", text: "Chapter 3 Section 3 reading due", type: "homework" },
-    { date: "2026-09-18", subject: "All Classes", text: "Half Day", type: "schedule" }
+    { date: "2026-09-18", subject: "All Classes", text: "Half Day", type: "schedule" },
+    { date: "2026-09-18", subject: "English", text: "Quiz", type: "quiz" },
+    { date: "2026-09-18", subject: "History", text: "Chapter 3 Section 4 reading due", type: "homework" },
+    { date: "2026-09-22", subject: "History", text: "Chapter 3 Section 5 reading due (date inferred, board just said \"Tuesday\" - worth confirming)", type: "homework" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
   const LATEST_SYNC = {
-    date: "2026-09-10",
+    date: "2026-09-11",
     board: [
-      { subject: "Writing", agenda: "Final draft", homework: "None" },
-      { subject: "English", agenda: "Unit 1 test review", homework: "Review (homework note was hard to read on the scan, worth a quick check)" },
-      { subject: "Chemistry", agenda: "Density", homework: "None noted" },
-      { subject: "History", agenda: "Ancient history, Chapter 3 reading", homework: "Reading sections due on a rolling schedule: Section 1 Fri 9/11, Section 2 Mon 9/14, Section 3 Wed 9/16. Two more sections were on the board but too hard to read clearly, worth confirming with him. A chapter test is coming \"soon after\" the sections finish, no exact date given yet." },
-      { subject: "Pre-Algebra", agenda: "Chapter 3 notes", homework: "Additional practice" },
-      { subject: "Biology", agenda: "Notes", homework: "None (Comp Check quiz Monday 9/14)" }
+      { subject: "PE", agenda: "Dodgeball", homework: "None" },
+      { subject: "English", agenda: "Unit test", homework: "None (next up: a quiz September 18th)" },
+      { subject: "Chemistry", agenda: "Density", homework: "Density-related homework due Tuesday 9/15 (quiz Wednesday 9/16)" },
+      { subject: "History", agenda: "Continuing Chapter 3 reading unit", homework: "Section 4 reading due Friday 9/18. Section 5 due \"Tuesday\" per the board (likely 9/22 based on the calendar, but not spelled out clearly on the scan, worth confirming with him)." },
+      { subject: "Pre-Algebra", agenda: "Topic 2 quiz today", homework: "None noted. A future \"Test 3\" covering sections 2-6 to 2-10 was mentioned with no date given yet." },
+      { subject: "Biology", agenda: "Muscle system notes", homework: "None (Comp Check quiz Monday 9/14)" }
     ]
   };
 
