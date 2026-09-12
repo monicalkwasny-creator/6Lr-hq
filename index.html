@@ -205,7 +205,7 @@
   /* ---- Coming up list ---- */
   .agenda-row {
     display: grid;
-    grid-template-columns: 64px 1fr auto;
+    grid-template-columns: 74px 1fr auto;
     align-items: center;
     gap: 12px;
     padding: 11px 14px;
@@ -221,9 +221,19 @@
     color: var(--ink-soft);
     line-height: 1.15;
   }
+  .agenda-weekday {
+    font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+    margin-bottom: 1px;
+  }
   .agenda-date b { display: block; font-size: 0.95rem; color: var(--ink); }
-  .agenda-text .subject { font-weight: 700; font-size: 0.92rem; display: block; }
-  .agenda-text .desc { font-size: 0.92rem; color: var(--ink-soft); }
+  /* Coming Up text: subject + description always match, bold + same larger size (standing rule, keep in sync going forward) */
+  .agenda-text .subject { font-weight: 700; font-size: 1rem; display: block; color: var(--ink); }
+  .agenda-text .desc { font-weight: 700; font-size: 1rem; color: var(--ink); }
   .pill {
     font-size: 0.68rem;
     font-weight: 700;
@@ -258,7 +268,7 @@
   .check.checked svg { opacity: 1; stroke: #F2ECDD; }
   .row-done .item-text, .row-done .subject, .row-done .desc { text-decoration: line-through; opacity: .5; }
   .due-item, .cal-detail-item { align-items: center; }
-  .agenda-row { grid-template-columns: 26px 64px 1fr auto auto; }
+  .agenda-row { grid-template-columns: 26px 74px 1fr auto auto; }
   .cal-detail-item { grid-template-columns: 26px 1fr auto auto; display: grid; }
 
   .tag-yours {
@@ -760,7 +770,7 @@
     document.getElementById("agendaList").innerHTML = (upcoming.length ? upcoming : items).map(it => `
       <div class="agenda-row${isDone(it.id) ? ' row-done' : ''}">
         ${checkHtml(it)}
-        <div class="agenda-date"><b>${it.dateObj.getDate()}</b>${it.dateObj.toLocaleDateString(undefined,{month:"short"})}</div>
+        <div class="agenda-date"><div class="agenda-weekday">${it.dateObj.toLocaleDateString(undefined,{weekday:"long"})}</div><b>${it.dateObj.getDate()}</b>${it.dateObj.toLocaleDateString(undefined,{month:"short"})}</div>
         <div class="agenda-text">
           <span class="subject">${it.subject} ${yoursTag(it)}</span>
           <span class="desc">${it.text}</span>
