@@ -720,16 +720,25 @@
   const calDetailEl = document.getElementById("calDetail");
   const grid = document.getElementById("calGrid");
 
+  function nextSchoolDay(from) {
+    const d = new Date(from);
+    d.setDate(d.getDate() + 1);
+    while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() + 1);
+    return d;
+  }
+
   function renderDue(items) {
-    const tomorrow = new Date(today); tomorrow.setDate(tomorrow.getDate() + 1);
-    const dueTomorrow = items.filter(it => daysBetween(tomorrow, it.dateObj) === 0);
+    const nextDay = nextSchoolDay(today);
+    const nextDayIsTomorrow = daysBetween(today, nextDay) === 1;
+    const nextDayLabel = nextDayIsTomorrow ? "Tomorrow" : nextDay.toLocaleDateString(undefined, { weekday: "long" });
+    const dueTomorrow = items.filter(it => daysBetween(nextDay, it.dateObj) === 0);
     const dueToday = items.filter(it => daysBetween(today, it.dateObj) === 0);
-    let focusSet = dueTomorrow, focusLabel = "Due Tomorrow";
+    let focusSet = dueTomorrow, focusLabel = "Due " + nextDayLabel;
     if (dueTomorrow.length === 0 && dueToday.length > 0) { focusSet = dueToday; focusLabel = "Due Today"; }
     eyebrowEl.textContent = focusLabel;
     if (focusSet.length === 0) {
       const next = items.find(it => it.dateObj >= today);
-      headingEl.textContent = "Nothing due tomorrow.";
+      headingEl.textContent = "Nothing due " + nextDayLabel.toLowerCase() + ".";
       listEl.innerHTML = next
         ? `<div class="due-empty">Next thing up: <b>${next.subject}</b>, ${next.text} — ${relativeLabel(next.dateObj, today)}.</div>`
         : `<div class="due-empty">Nothing on the board right now.</div>`;
