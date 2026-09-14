@@ -522,21 +522,26 @@
     { date: "2026-09-18", subject: "All Classes", text: "Half Day", type: "schedule" },
     { date: "2026-09-18", subject: "English", text: "Quiz", type: "quiz" },
     { date: "2026-09-18", subject: "History", text: "Chapter 3 Section 4 reading due", type: "homework" },
-    { date: "2026-09-22", subject: "History", text: "Chapter 3 Section 5 reading due (date inferred, board just said \"Tuesday\" - worth confirming)", type: "homework" }
+    { date: "2026-09-22", subject: "History", text: "Chapter 3 Section 5 reading due (date inferred, board just said \"Tuesday\" - worth confirming)", type: "homework" },
+    { date: "2026-09-15", subject: "English", text: "Tuck Everlasting adjective/verb/adverb vocab worksheet due", type: "homework" },
+    { date: "2026-09-15", subject: "History", text: "Reading Check", type: "quiz" },
+    { date: "2026-09-17", subject: "Pre-Algebra", text: "Test 3 (Topics 1 and 2)", type: "test" },
+    { date: "2026-09-25", subject: "Pre-Algebra", text: "Quiz 4 Topic 3", type: "quiz" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
   const LATEST_SYNC = {
-    date: "2026-09-11",
+    date: "2026-09-14",
     board: [
-      { subject: "PE", agenda: "Dodgeball", homework: "None" },
-      { subject: "English", agenda: "Unit test", homework: "None (next up: a quiz September 18th)" },
-      { subject: "Chemistry", agenda: "Density", homework: "Density-related homework due Tuesday 9/15 (quiz Wednesday 9/16)" },
-      { subject: "History", agenda: "Continuing Chapter 3 reading unit", homework: "Section 4 reading due Friday 9/18. Section 5 due \"Tuesday\" per the board (likely 9/22 based on the calendar, but not spelled out clearly on the scan, worth confirming with him)." },
-      { subject: "Pre-Algebra", agenda: "Topic 2 quiz today", homework: "None noted. A future \"Test 3\" covering sections 2-6 to 2-10 was mentioned with no date given yet." },
-      { subject: "Biology", agenda: "Muscle system notes", homework: "None (Comp Check quiz Monday 9/14)" }
+      { subject: "PE", agenda: "Picture Day", homework: "None" },
+      { subject: "Electives", agenda: "Not clearly legible on today's scan (just a date stamp came through)", homework: "Not clearly legible" },
+      { subject: "English", agenda: "Tuck Everlasting - main and subordinate clauses", homework: "Adjective/Verb/Adverb worksheet plus a Tuck Everlasting vocab list, due Tuesday 9/15" },
+      { subject: "Chemistry", agenda: "Density Relay", homework: "Density Packet due Tuesday 9/15" },
+      { subject: "History", agenda: "Ancient Asia (Hinduism & Buddhism)", homework: "Chapter 3 Section 3 Reading Guide due Wednesday 9/16, plus a Kahoot review. Also a Reading Check tomorrow, Tuesday 9/15." },
+      { subject: "Pre-Algebra", agenda: "Determine unit rates with ratios (Lesson 3-2)", homework: "Lesson 3-2 Additional Practice. The attached weekly sheet also lists: Test 3 (Topics 1-2) Monday 9/17, Half Day Tuesday 9/18, and Quiz 4 Topic 3 Thursday 9/25 - this is the \"Test 3\" that was previously undated." },
+      { subject: "Biology", agenda: "Not clearly legible on today's scan", homework: "Not clearly legible" }
     ]
   };
 
