@@ -526,22 +526,23 @@
     { date: "2026-09-15", subject: "English", text: "Tuck Everlasting adjective/verb/adverb vocab worksheet due", type: "homework" },
     { date: "2026-09-15", subject: "History", text: "Reading Check", type: "quiz" },
     { date: "2026-09-17", subject: "Pre-Algebra", text: "Test 3 (Topics 1 and 2)", type: "test" },
-    { date: "2026-09-25", subject: "Pre-Algebra", text: "Quiz 4 Topic 3", type: "quiz" }
+    { date: "2026-09-25", subject: "Pre-Algebra", text: "Quiz 4 Topic 3", type: "quiz" },
+    { date: "2026-09-17", subject: "English", text: "Vocab Quiz (Tuck Everlasting)", type: "quiz" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
   const LATEST_SYNC = {
-    date: "2026-09-14",
+    date: "2026-09-15",
     board: [
-      { subject: "PE", agenda: "Picture Day", homework: "None" },
-      { subject: "Electives", agenda: "Not clearly legible on today's scan (just a date stamp came through)", homework: "Not clearly legible" },
-      { subject: "English", agenda: "Tuck Everlasting - main and subordinate clauses", homework: "Adjective/Verb/Adverb worksheet plus a Tuck Everlasting vocab list, due Tuesday 9/15" },
-      { subject: "Chemistry", agenda: "Density Relay", homework: "Density Packet due Tuesday 9/15" },
-      { subject: "History", agenda: "Ancient Asia (Hinduism & Buddhism)", homework: "Chapter 3 Section 3 Reading Guide due Wednesday 9/16, plus a Kahoot review. Also a Reading Check tomorrow, Tuesday 9/15." },
-      { subject: "Pre-Algebra", agenda: "Determine unit rates with ratios (Lesson 3-2)", homework: "Lesson 3-2 Additional Practice. The attached weekly sheet also lists: Test 3 (Topics 1-2) Monday 9/17, Half Day Tuesday 9/18, and Quiz 4 Topic 3 Thursday 9/25 - this is the \"Test 3\" that was previously undated." },
-      { subject: "Biology", agenda: "Not clearly legible on today's scan", homework: "Not clearly legible" }
+      { subject: "Writing", agenda: "Thesis statements (subject line was smudged on the scan, \"Writing\" is our best read)", homework: "None" },
+      { subject: "Electives", agenda: "Not clearly legible on today's scan", homework: "Not clearly legible" },
+      { subject: "English", agenda: "Adverbs and Tuck Everlasting", homework: "Adjectives and Adverbs worksheet, plus Tuck Everlasting vocab. Heads up, there's a Vocab Quiz Thursday 9/17." },
+      { subject: "Chemistry", agenda: "Density Review", homework: "Study. There's a Density Quiz tomorrow, Wednesday 9/16." },
+      { subject: "History", agenda: "Ancient Asia", homework: "Chapter 3 Section 3 due tomorrow, Wednesday 9/16. Kahoot Code: 005833151." },
+      { subject: "Pre-Algebra", agenda: "Understanding proportional relationships (Lesson 3-3)", homework: "Lesson 3-3 Additional Practice. Test 3 is Thursday 9/17, covering 2-10 through 2-6, no calculator." },
+      { subject: "Biology", agenda: "Integumentary System", homework: "Not clearly legible on today's scan" }
     ]
   };
 
