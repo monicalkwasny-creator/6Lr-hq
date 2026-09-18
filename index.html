@@ -527,22 +527,25 @@
     { date: "2026-09-15", subject: "History", text: "Reading Check", type: "quiz" },
     { date: "2026-09-17", subject: "Pre-Algebra", text: "Test 3 (Topics 1 and 2)", type: "test" },
     { date: "2026-09-25", subject: "Pre-Algebra", text: "Quiz 4 Topic 3", type: "quiz" },
-    { date: "2026-09-17", subject: "English", text: "Vocab Quiz (Tuck Everlasting)", type: "quiz" }
+    { date: "2026-09-17", subject: "English", text: "Vocab Quiz (Tuck Everlasting)", type: "quiz" },
+    { date: "2026-09-18", subject: "History", text: "Chapter 3 Section 2 due (board also previously listed Section 4 for this same date, worth double-checking which is correct)", type: "homework" },
+    { date: "2026-09-22", subject: "Chemistry", text: "Unit Test", type: "test" },
+    { date: "2026-09-23", subject: "All Classes", text: "Weekly Packet Due", type: "schedule" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
   const LATEST_SYNC = {
-    date: "2026-09-15",
+    date: "2026-09-17",
     board: [
-      { subject: "Writing", agenda: "Thesis statements (subject line was smudged on the scan, \"Writing\" is our best read)", homework: "None" },
-      { subject: "Electives", agenda: "Not clearly legible on today's scan", homework: "Not clearly legible" },
-      { subject: "English", agenda: "Adverbs and Tuck Everlasting", homework: "Adjectives and Adverbs worksheet, plus Tuck Everlasting vocab. Heads up, there's a Vocab Quiz Thursday 9/17." },
-      { subject: "Chemistry", agenda: "Density Review", homework: "Study. There's a Density Quiz tomorrow, Wednesday 9/16." },
-      { subject: "History", agenda: "Ancient Asia", homework: "Chapter 3 Section 3 due tomorrow, Wednesday 9/16. Kahoot Code: 005833151." },
-      { subject: "Pre-Algebra", agenda: "Understanding proportional relationships (Lesson 3-3)", homework: "Lesson 3-3 Additional Practice. Test 3 is Thursday 9/17, covering 2-10 through 2-6, no calculator." },
-      { subject: "Biology", agenda: "Integumentary System", homework: "Not clearly legible on today's scan" }
+      { subject: "Writing/English (subject field on the scan just said \"Vocab Quiz\", hard to read clearly)", agenda: "Tuck Everlasting", homework: "None" },
+      { subject: "Electives", agenda: "Not clearly legible on today's scan", homework: "Not clearly legible on today's scan" },
+      { subject: "English", agenda: "Tuck Everlasting and ARS video", homework: "None" },
+      { subject: "Chemistry", agenda: "Density Lab", homework: "None. Heads up, there's a Unit Test Tuesday 9/22." },
+      { subject: "History", agenda: "Ancient Asia", homework: "Chapter 3 Section 2 due Friday 9/18 (an earlier board listed Section 4 due that same day, worth double-checking which is correct). Also a test mentioned for \"soon after 9/23\" but no exact date was given." },
+      { subject: "Pre-Algebra", agenda: "Test (Test 3, Topics 1 and 2)", homework: "Back page, 5 questions" },
+      { subject: "Biology", agenda: "Integumentary System", homework: "None" }
     ]
   };
 
