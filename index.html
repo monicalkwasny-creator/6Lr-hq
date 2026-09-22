@@ -539,24 +539,25 @@
     { date: "2026-09-17", subject: "English", text: "Vocab Quiz (Tuck Everlasting)", type: "quiz" },
     { date: "2026-09-18", subject: "History", text: "Chapter 3 Section 2 due (board also previously listed Section 4 for this same date, worth double-checking which is correct)", type: "homework" },
     { date: "2026-09-22", subject: "Chemistry", text: "Unit Test", type: "test" },
-    { date: "2026-09-23", subject: "All Classes", text: "Weekly Packet Due", type: "schedule" }
+    { date: "2026-09-23", subject: "All Classes", text: "Weekly Packet Due", type: "schedule" },
+    { date: "2026-09-25", subject: "English", text: "Tuck Everlasting Test", type: "test" },
+    { date: "2026-09-29", subject: "History", text: "Test (date tentative, board said \"soon after\" with a stray \"9/29\" elsewhere on the scan, worth confirming)", type: "test" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-09-21T16:22:02-07:00";
+  const LAST_CHECKED = "2026-09-21T17:06:14-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-09-17",
+    date: "2026-09-21",
     board: [
-      { subject: "Writing/English (subject field on the scan just said \"Vocab Quiz\", hard to read clearly)", agenda: "Tuck Everlasting", homework: "None" },
-      { subject: "Electives", agenda: "Not clearly legible on today's scan", homework: "Not clearly legible on today's scan" },
-      { subject: "English", agenda: "Tuck Everlasting and ARS video", homework: "None" },
-      { subject: "Chemistry", agenda: "Density Lab", homework: "None. Heads up, there's a Unit Test Tuesday 9/22." },
-      { subject: "History", agenda: "Ancient Asia", homework: "Chapter 3 Section 2 due Friday 9/18 (an earlier board listed Section 4 due that same day, worth double-checking which is correct). Also a test mentioned for \"soon after 9/23\" but no exact date was given." },
-      { subject: "Pre-Algebra", agenda: "Test (Test 3, Topics 1 and 2)", homework: "Back page, 5 questions" },
-      { subject: "Biology", agenda: "Integumentary System", homework: "None" }
+      { subject: "PE", agenda: "Workout", homework: "None" },
+      { subject: "English", agenda: "Tuck Everlasting", homework: "Main clause & dependent clause worksheet. Heads up, there's a Tuck Everlasting test this Friday, 9/25." },
+      { subject: "Chemistry", agenda: "Review", homework: "Study. Heads up, the Unit Test is tomorrow, Tuesday 9/22." },
+      { subject: "History", agenda: "Ancient Asia", homework: "Chapter 3 sections due tomorrow, 9/22. Weekly packet due Wednesday, 9/23. Also a test mentioned \"soon after,\" no exact date given, a stray \"9/29\" appeared elsewhere on the scan so that's our best guess for now, worth confirming." },
+      { subject: "Pre-Algebra", agenda: "3-5, graphing proportional relationships", homework: "3-5 additional practice. Quiz this Friday, 9/25." },
+      { subject: "Biology", agenda: "Integumentary system", homework: "None" }
     ]
   };
 
