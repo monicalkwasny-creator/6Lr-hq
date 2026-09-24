@@ -541,23 +541,26 @@
     { date: "2026-09-22", subject: "Chemistry", text: "Unit Test", type: "test" },
     { date: "2026-09-23", subject: "All Classes", text: "Weekly Packet Due", type: "schedule" },
     { date: "2026-09-25", subject: "English", text: "Tuck Everlasting Test", type: "test" },
-    { date: "2026-09-29", subject: "History", text: "Test (date tentative, board said \"soon after\" with a stray \"9/29\" elsewhere on the scan, worth confirming)", type: "test" }
+    { date: "2026-09-29", subject: "History", text: "Test (date tentative, board said \"soon after\" with a stray \"9/29\" elsewhere on the scan, worth confirming)", type: "test" },
+    { date: "2026-09-24", subject: "Chemistry", text: "U3 HW1: The Atom worksheet due", type: "homework" },
+    { date: "2026-09-30", subject: "History", text: "Weekly Packet Due", type: "homework" },
+    { date: "2026-09-25", subject: "Biology", text: "Comprehension Check", type: "quiz" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-09-23T16:19:26-07:00";
+  const LAST_CHECKED = "2026-09-23T17:09:00-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-09-22",
+    date: "2026-09-23",
     board: [
-      { subject: "Writing", agenda: "Introduction paragraph", homework: "Essay introduction" },
-      { subject: "English", agenda: "Tuck Everlasting", homework: "Working on study guide. Heads up, there's a Tuck Everlasting test this Friday, 9/25 (the board also mentioned it covers the prologue through around chapter 7 or 8, but that part of the scan was smudged so the exact scope isn't certain)." },
-      { subject: "Chemistry", agenda: "Unit 2 test (today)", homework: "The homework/handouts fields were hard to make out on this scan, just scattered words like \"Friday\" and \"Unit 3\" that didn't add up to a clear note, so nothing confirmed there beyond today's test." },
-      { subject: "History", agenda: "Ancient Asia", homework: "Weekly packet due tomorrow, 9/23. Also a test mentioned as coming up, still no exact date given (our best guess is still 9/29, worth confirming)." },
-      { subject: "Math", agenda: "3-6, applying proportional relationships", homework: "3-6 additional practice. Quiz this Friday, 9/25." },
-      { subject: "Biology", agenda: "Integumentary system", homework: "None" }
+      { subject: "Writing", agenda: "Conclusion and body paragraphs", homework: "Same, working on the conclusion paragraph and two body paragraphs for their essay." },
+      { subject: "English", agenda: "Tuck Everlasting", homework: "Work on the study guide. Test is this Friday, 9/25, already on the calendar." },
+      { subject: "Chemistry", agenda: "Unit 3: atom structure", homework: "U3 HW1, The Atom worksheet, due tomorrow, Thursday 9/24. There's also a mention of a periodic table quiz today, but that part of the scan was garbled, so the wording isn't certain, if it's today it's already happened rather than something upcoming." },
+      { subject: "History", agenda: "Ancient Asia", homework: "Weekly packet due 9/30. Also repeats that a test is \"coming up\" with a study guide to fill out, still no exact date given (best guess is still 9/29, worth confirming). A Kahoot code was listed too: 005833151." },
+      { subject: "Pre-Algebra", agenda: "Analyzing percents of numbers", homework: "Additional practice. Quiz this Friday, 9/25, already on the calendar." },
+      { subject: "Biology", agenda: "Integumentary system", homework: "None listed. There's a comprehension check this Friday, 9/25, now added to the calendar." }
     ]
   };
 
