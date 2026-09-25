@@ -544,23 +544,25 @@
     { date: "2026-09-29", subject: "History", text: "Test (date tentative, board said \"soon after\" with a stray \"9/29\" elsewhere on the scan, worth confirming)", type: "test" },
     { date: "2026-09-24", subject: "Chemistry", text: "U3 HW1: The Atom worksheet due", type: "homework" },
     { date: "2026-09-30", subject: "History", text: "Weekly Packet Due", type: "homework" },
-    { date: "2026-09-25", subject: "Biology", text: "Comprehension Check", type: "quiz" }
+    { date: "2026-09-25", subject: "Biology", text: "Comprehension Check", type: "quiz" },
+    { date: "2026-09-30", subject: "Chemistry", text: "Periodic Table Quiz", type: "quiz" },
+    { date: "2026-09-25", subject: "Chemistry", text: "U3 HW2: Periodic Table, Ions, and Isotopes worksheet due", type: "homework" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-09-24T16:18:38-07:00";
+  const LAST_CHECKED = "2026-09-24T16:56:00-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-09-23",
+    date: "2026-09-24",
     board: [
-      { subject: "Writing", agenda: "Conclusion and body paragraphs", homework: "Same, working on the conclusion paragraph and two body paragraphs for their essay." },
-      { subject: "English", agenda: "Tuck Everlasting", homework: "Work on the study guide. Test is this Friday, 9/25, already on the calendar." },
-      { subject: "Chemistry", agenda: "Unit 3: atom structure", homework: "U3 HW1, The Atom worksheet, due tomorrow, Thursday 9/24. There's also a mention of a periodic table quiz today, but that part of the scan was garbled, so the wording isn't certain, if it's today it's already happened rather than something upcoming." },
-      { subject: "History", agenda: "Ancient Asia", homework: "Weekly packet due 9/30. Also repeats that a test is \"coming up\" with a study guide to fill out, still no exact date given (best guess is still 9/29, worth confirming). A Kahoot code was listed too: 005833151." },
-      { subject: "Pre-Algebra", agenda: "Analyzing percents of numbers", homework: "Additional practice. Quiz this Friday, 9/25, already on the calendar." },
-      { subject: "Biology", agenda: "Integumentary system", homework: "None listed. There's a comprehension check this Friday, 9/25, now added to the calendar." }
+      { subject: "Writing", agenda: "Body paragraphs", homework: "Body paragraph, and paragraph 2, for their essay." },
+      { subject: "English", agenda: "Tuck Everlasting", homework: "Study for tomorrow's test, covering the prologue through chapter 6. Already on the calendar for Friday 9/25." },
+      { subject: "Chemistry", agenda: "Periodic table, ions, and isotopes", homework: "U3 HW2, the Periodic Table, Ions, and Isotopes worksheet, due Friday 9/25 (now on the calendar). One part of the scan was smudged and hard to read exactly, so double check the worksheet itself for any details we may have missed. There's also a Periodic Table Quiz coming up on Wednesday 9/30, now on the calendar." },
+      { subject: "History", agenda: "Ancient Asia", homework: "Weekly packet due 9/30 (already on the calendar). Also repeats that a test is \"coming up\" with study guides to fill out, still no exact date given (best guess is still 9/29, worth confirming)." },
+      { subject: "Pre-Algebra", agenda: "Unit 2, connecting percents and proportions", homework: "Unit 2 additional practice. Quiz this Friday, 9/25, already on the calendar." },
+      { subject: "Biology", agenda: "Integumentary system", homework: "None listed tonight. There's a comprehension check next class, this Friday 9/25, already on the calendar." }
     ]
   };
 
