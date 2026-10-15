@@ -552,24 +552,37 @@
     { date: "2026-10-01", subject: "Chemistry", text: "Quiz (board just said \"the 1st\" with no unit named, worth confirming with him)", type: "quiz" },
     { date: "2026-10-02", subject: "Pre-Algebra", text: "Test (Topics 1-3)", type: "test" },
     { date: "2026-10-05", subject: "All Classes", text: "Fall Break begins, no school through October 9", type: "schedule" },
-    { date: "2026-09-30", subject: "Chemistry", text: "Assignment due (worksheet name wasn't legible on today's scan, just marked \"Due 9/30\")", type: "homework" }
+    { date: "2026-09-30", subject: "Chemistry", text: "Assignment due (worksheet name wasn't legible on today's scan, just marked \"Due 9/30\")", type: "homework" },
+    { date: "2026-10-14", subject: "History", text: "Chapter 5 Section 1 reading due", type: "homework" },
+    { date: "2026-10-14", subject: "Chemistry", text: "Ions and Isotopes worksheet due", type: "homework" },
+    { date: "2026-10-15", subject: "Chemistry", text: "U3 HW6: Isotope Notation worksheet due", type: "homework" },
+    { date: "2026-10-15", subject: "English", text: "Figurative language packet due", type: "homework" },
+    { date: "2026-10-15", subject: "English", text: "Tuck Everlasting Test", type: "test" },
+    { date: "2026-10-16", subject: "Chemistry", text: "Ion and Isotope Quiz (the 10/13 board called it a test, the 10/14 board says quiz)", type: "quiz" },
+    { date: "2026-10-16", subject: "Pre-Algebra", text: "Quiz, Topic 4 to 5-3 (the teacher's weekly sheet says Topic 4 to 5-4, worth confirming)", type: "quiz" },
+    { date: "2026-10-16", subject: "History", text: "Chapter 5 Section 2 reading due", type: "homework" },
+    { date: "2026-10-20", subject: "History", text: "Chapter 5 Section 3 reading due", type: "homework" },
+    { date: "2026-10-20", subject: "Biology", text: "Comp Check", type: "quiz" },
+    { date: "2026-10-21", subject: "History", text: "Weekly Packet Due", type: "homework" },
+    { date: "2026-10-23", subject: "History", text: "Chapter 5 Section 4 reading due", type: "homework" },
+    { date: "2026-10-23", subject: "Pre-Algebra", text: "Test through 5-4 (from the teacher's weekly sheet)", type: "test" },
+    { date: "2026-10-30", subject: "All Classes", text: "Early Release", type: "schedule" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-10-14T17:07:00-07:00";
+  const LAST_CHECKED = "2026-10-14T17:15:00-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-09-29",
+    date: "2026-10-14",
     board: [
-      { subject: "Writing", agenda: "Peer-editing and final draft.", homework: "Work on final draft." },
-      { subject: "Electives", agenda: "Nothing filled in on today's scan.", homework: "None listed." },
-      { subject: "English", agenda: "Tuck Everlasting", homework: "None listed today. Reminder: the Tuck Everlasting Vocabulary Quiz (List 2) is coming up October 1st, already on the calendar." },
-      { subject: "Chemistry", agenda: "Review", homework: "Something due 9/30, but the worksheet name wasn't legible on the scan, worth checking with him. There's also the Periodic Table Quiz tomorrow (Wed 9/30), already on the calendar." },
-      { subject: "History", agenda: "Indian Empires and Chinese Dynasties Kahoot", homework: "Study for the test (Kahoot recommended). Remember the test and the weekly packet are both due tomorrow, Wednesday 9/30, already on the calendar." },
-      { subject: "Pre-Algebra", agenda: "Solve, Change, and Percent", homework: "4-4 Additional Practice. The Test on Topics 1-3 is still coming Friday 10/2, already on the calendar." },
-      { subject: "Biology", agenda: "The cardiovascular system (with a Label the Parts of the Human Heart worksheet attached).", homework: "Study. The board also mentions a \"Comp Check\" but the date wasn't legible, worth asking him about." }
+      { subject: "Writing", agenda: "Conclusion and body paragraphs for the four-paragraph essay (topic: should kids have limits on screen time).", homework: "Body paragraphs." },
+      { subject: "English", agenda: "Tuck Everlasting", homework: "Figurative language packet due tomorrow (Thu 10/15), and the Tuck Everlasting test is tomorrow too. Both are on the calendar." },
+      { subject: "Chemistry", agenda: "Ion and isotope review", homework: "Isotope Notation (U3 HW6, due 10/15). The ion and isotope quiz is Friday 10/16, on the calendar. Yesterday's board called it a test, today's says quiz." },
+      { subject: "History", agenda: "Greece", homework: "Chapter 5 Section 2 due Friday 10/16, Section 3 due Tuesday 10/20, Section 4 due Friday 10/23, and the weekly packet is due Wednesday 10/21 (on the calendar)." },
+      { subject: "Pre-Algebra", agenda: "5-2 Generate equivalent expressions", homework: "5-2 Additional Practice. Quiz Friday 10/16, on the calendar. The board says it covers Topic 4 to 5-3, but the teacher's weekly sheet says Topic 4 to 5-4, worth checking with him. The sheet also lists a test through 5-4 on Friday 10/23." },
+      { subject: "Biology", agenda: "Cardiovascular system", homework: "None listed. The Comp Check is Tuesday 10/20, on the calendar." }
     ]
   };
 
