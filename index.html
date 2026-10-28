@@ -568,8 +568,18 @@
     { date: "2026-10-23", subject: "History", text: "Chapter 5 Section 4 reading due (6LR's 10/16 board; 6PM's 10/19 board says Thursday next week)", type: "homework" },
     { date: "2026-10-23", subject: "Pre-Algebra", text: "Test, Unit 1 through 5-3 (the 10/16 board and the new weekly sheet both say 5-3)", type: "test" },
     { date: "2026-10-23", subject: "English", text: "Spelling Bee", type: "reminder" },
-    { date: "2026-10-30", subject: "Pre-Algebra", text: "Topic 5 Quiz (from the teacher's weekly sheet)", type: "quiz" },
-    { date: "2026-10-30", subject: "All Classes", text: "Early Release", type: "schedule" }
+    { date: "2026-10-30", subject: "All Classes", text: "Early Release", type: "schedule" },
+    { date: "2026-10-28", subject: "History", text: "Weekly Packet Due", type: "homework" },
+    { date: "2026-10-28", subject: "History", text: "Chapter 6 Section 1 reading due", type: "homework" },
+    { date: "2026-10-28", subject: "English", text: "Tuck Everlasting character analysis due", type: "homework" },
+    { date: "2026-10-29", subject: "English", text: "Tuck Everlasting Test II (Chapters 12 to 19)", type: "test" },
+    { date: "2026-10-30", subject: "History", text: "Test (Rome; the study guide calls it a quiz, Kahoot code 00963167)", type: "test" },
+    { date: "2026-10-30", subject: "Chemistry", text: "Project due", type: "homework" },
+    { date: "2026-11-02", subject: "History", text: "Chapter 6 Section 2 reading due", type: "homework" },
+    { date: "2026-11-04", subject: "History", text: "Chapter 6 Section 3 reading due", type: "homework" },
+    { date: "2026-11-06", subject: "History", text: "Chapter 6 Section 4 reading due", type: "homework" },
+    { date: "2026-11-06", subject: "Pre-Algebra", text: "Topic 5 and 6 Quiz (the Oct 26-30 weekly sheet; last week's sheet had a Topic 5 quiz on 10/30)", type: "quiz" },
+    { date: "2026-11-11", subject: "All Classes", text: "Veterans Day, no school", type: "schedule" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
@@ -578,14 +588,16 @@
   const LAST_CHECKED = "2026-10-27T17:16:41-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-10-19",
-    note: "6LR's board didn't post today, so this is the 6PM homeroom's Monday 10/19 board (same 6th grade classes). 6LR's Friday 10/16 board is folded in where it adds something.",
+    date: "2026-10-27",
+    note: "This is Tuesday 10/27's board, with Monday 10/26's folded in (PE and Biology only met Monday). Busy week: Tuck test Thursday, then the History test and Chemistry project Friday, which is a half day.",
     board: [
-      { subject: "History", agenda: "Greece", homework: "Chapter 5 Section 3 due tomorrow (Tue 10/20) and the weekly packet due Wednesday 10/21, on the calendar. Section 4: 6LR's 10/16 board says Friday 10/23, 6PM's board says Thursday next week, so worth checking. A test is coming up, no date yet. Kahoot code 04789750. The packet also has a Chapter 4 Section 3 summary (Conflict in the Greek World) with review questions." },
-      { subject: "Pre-Algebra", agenda: "5-4 Expand expressions", homework: "5-4 Additional Practice. The weekly sheet has 5-5 Factor Expressions Tuesday, 5-6 Add Expressions Wednesday, 5-7 Subtract Expressions Thursday, and a few Math Rewind problems each day. Test (Unit 1 through 5-3) Friday 10/23 and Topic 5 quiz Friday 10/30, both on the calendar. A Lesson Quiz 5-1 page came home too." },
-      { subject: "English", agenda: "Tuck Everlasting", homework: "Tuck Everlasting Vocabulary List 3: part of speech and definition for 10 words (vanity, indomitable, surge, silhouettes, pinched, anguish, gruffly, holler, perilous, cavernous). No due date on the board. Tuck Everlasting test Thursday 10/22 and the Spelling Bee Friday 10/23, both on the calendar. A Daily Grammar Lesson 1 (verbs) sheet came home too." },
-      { subject: "Biology", agenda: "Cardiovascular system", homework: "Study! The Comp Check is tomorrow (Tue 10/20), on the calendar. 6LR's 10/16 packet has a 44-question Cardiovascular System Reading Guide that's good to study from." },
-      { subject: "Chemistry", agenda: "Atomic radius", homework: "None listed." }
+      { subject: "English", agenda: "Tuck Everlasting, verbs", homework: "Tuck Everlasting character analysis due tomorrow (Wed 10/28). Monday's board also lists the AAAWWUUBBIS practice sheet (no due date). Tuck Everlasting Test II (Chapters 12 to 19) is Thursday 10/29, on the calendar, and its study guide came home. Daily Grammar sheets came home too: Lesson 6 (verb phrases) and the Quiz for Lessons 1-5." },
+      { subject: "History", agenda: "Rome (Monday: Greece)", homework: "Weekly packet and Chapter 6 Section 1 due tomorrow (Wed 10/28). Test Friday 10/30: the Rome Quiz Study Guide (31 questions, Kahoot code 00963167) came home to study from. Then Chapter 6 Section 2 due Mon 11/2, Section 3 due Wed 11/4 and Section 4 due Fri 11/6, all on the calendar. Reading guides for Sections 2, 3 and 4 came home, plus a Chapter 5 Section 1 summary (The Roman World Takes Shape)." },
+      { subject: "Chemistry", agenda: "Project", homework: "Project due Friday 10/30, on the calendar." },
+      { subject: "Pre-Algebra", agenda: "2-step equations (Monday: analyze equivalent expressions)", homework: "6-1 Additional Practice tonight (Monday's was 5-8). The weekly sheet has 6-2 Solve two-step equations Wednesday, 6-3 Solve equations using the distributive property Thursday, and a few Math Rewind problems each day. Half day Friday. The Topic 5 and 6 Quiz is Friday 11/6, on the calendar (last week's sheet had a Topic 5 quiz on 10/30; this week's moves it). A Lesson Quiz 5-7 page and the Topic 6 Get Ready review page came home too." },
+      { subject: "Writing", agenda: "Timed writing practice", homework: "Edit your writing practice. A Do Now free-write page, a brainstorming page and the prompt \"Travel Back in Time, or Take a Journey to the Future?\" (150 words or more) came home." },
+      { subject: "Biology", agenda: "Immune system (Monday)", homework: "None listed." },
+      { subject: "PE", agenda: "Handball (Monday)", homework: "None." }
     ]
   };
 
