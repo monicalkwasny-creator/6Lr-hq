@@ -585,20 +585,12 @@
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-02T16:13:43-07:00";
+  const LAST_CHECKED = "2026-11-02T16:25:00-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-10-27",
-    note: "This is Tuesday 10/27's board, with Monday 10/26's folded in (PE and Biology only met Monday). Busy week: Tuck test Thursday, then the History test and Chemistry project Friday, which is a half day.",
-    board: [
-      { subject: "English", agenda: "Tuck Everlasting, verbs", homework: "Tuck Everlasting character analysis due tomorrow (Wed 10/28). Monday's board also lists the AAAWWUUBBIS practice sheet (no due date). Tuck Everlasting Test II (Chapters 12 to 19) is Thursday 10/29, on the calendar, and its study guide came home. Daily Grammar sheets came home too: Lesson 6 (verb phrases) and the Quiz for Lessons 1-5." },
-      { subject: "History", agenda: "Rome (Monday: Greece)", homework: "Weekly packet and Chapter 6 Section 1 due tomorrow (Wed 10/28). Test Friday 10/30: the Rome Quiz Study Guide (31 questions, Kahoot code 00963167) came home to study from. Then Chapter 6 Section 2 due Mon 11/2, Section 3 due Wed 11/4 and Section 4 due Fri 11/6, all on the calendar. Reading guides for Sections 2, 3 and 4 came home, plus a Chapter 5 Section 1 summary (The Roman World Takes Shape)." },
-      { subject: "Chemistry", agenda: "Project", homework: "Project due Friday 10/30, on the calendar." },
-      { subject: "Pre-Algebra", agenda: "2-step equations (Monday: analyze equivalent expressions)", homework: "6-1 Additional Practice tonight (Monday's was 5-8). The weekly sheet has 6-2 Solve two-step equations Wednesday, 6-3 Solve equations using the distributive property Thursday, and a few Math Rewind problems each day. Half day Friday. The Topic 5 and 6 Quiz is Friday 11/6, on the calendar (last week's sheet had a Topic 5 quiz on 10/30; this week's moves it). A Lesson Quiz 5-7 page and the Topic 6 Get Ready review page came home too." },
-      { subject: "Writing", agenda: "Timed writing practice", homework: "Edit your writing practice. A Do Now free-write page, a brainstorming page and the prompt \"Travel Back in Time, or Take a Journey to the Future?\" (150 words or more) came home." },
-      { subject: "Biology", agenda: "Immune system (Monday)", homework: "None listed." },
-      { subject: "PE", agenda: "Handball (Monday)", homework: "None." }
-    ]
+    date: "2026-11-02",
+    note: "No homework board for Monday 11/2: the shared Drive folder for today was posted by the homework-helper team labeled \"NO HWB\" and had no board inside, so there's nothing new to report from class today.",
+    board: []
   };
 
   function parseLocalDate(iso) {
