@@ -579,18 +579,30 @@
     { date: "2026-11-04", subject: "History", text: "Chapter 6 Section 3 reading due", type: "homework" },
     { date: "2026-11-06", subject: "History", text: "Chapter 6 Section 4 reading due", type: "homework" },
     { date: "2026-11-06", subject: "Pre-Algebra", text: "Topic 5 and 6 Quiz (the Oct 26-30 weekly sheet; last week's sheet had a Topic 5 quiz on 10/30)", type: "quiz" },
-    { date: "2026-11-11", subject: "All Classes", text: "Veterans Day, no school", type: "schedule" }
+    { date: "2026-11-11", subject: "All Classes", text: "Veterans Day, no school", type: "schedule" },
+    { date: "2026-11-04", subject: "History", text: "Weekly Packet & Reading Guide due", type: "homework" },
+    { date: "2026-11-04", subject: "History", text: "Reading Check (no explicit date printed on the scan, grouped with the 11/4 homework so assumed same day)", type: "quiz" },
+    { date: "2026-11-04", subject: "Biology", text: "Comp Check", type: "quiz" },
+    { date: "2026-11-05", subject: "English", text: "Tuck Everlasting Vocab Quiz (quiz number hard to read on the scan, looked like \"II(4)\"; date taken from \"Thursday\" on the board)", type: "quiz" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-03T16:13:55-07:00";
+  const LAST_CHECKED = "2026-11-03T16:39:09-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-02",
-    note: "No homework board for Monday 11/2: the shared Drive folder for today was posted by the homework-helper team labeled \"NO HWB\" and had no board inside, so there's nothing new to report from class today.",
-    board: []
+    date: "2026-11-03",
+    note: "",
+    board: [
+      { subject: "Writing", agenda: "Timed writing practice", homework: "Finish today's timed writing (the prompt was about your greatest accomplishment, 2-3 paragraphs). No handouts or dates noted." },
+      { subject: "Electives", agenda: "Scan was too garbled on this period to make out the agenda.", homework: "Nothing legible on the scan for homework either." },
+      { subject: "English", agenda: "Tuck Everlasting reading comprehension questions", homework: "Tuck Everlasting vocab packet. There's also a vocab quiz noted for Thursday (11/5), though the quiz number was hard to read on the scan (looked like \"II(4)\")." },
+      { subject: "Chemistry", agenda: "Review game", homework: "Study the study guide. No specific test date was listed on today's scan." },
+      { subject: "History", agenda: "Rome", homework: "Weekly Packet & Reading Guide due tomorrow (Wed 11/4). A Reading Check is also noted, which looks like it lands the same day." },
+      { subject: "Pre-Algebra", agenda: "6-6: Solving two-step inequalities", homework: "6-6 Additional Practice. No new dates noted today; the Topic 5 and 6 Quiz already on the calendar for Friday 11/6 still stands." },
+      { subject: "Biology", agenda: "Immune System", homework: "Study! A Comp Check is noted for Wednesday, November 4th." }
+    ]
   };
 
   function parseLocalDate(iso) {
