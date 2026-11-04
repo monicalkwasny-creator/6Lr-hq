@@ -583,25 +583,26 @@
     { date: "2026-11-04", subject: "History", text: "Weekly Packet & Reading Guide due", type: "homework" },
     { date: "2026-11-04", subject: "History", text: "Reading Check (no explicit date printed on the scan, grouped with the 11/4 homework so assumed same day)", type: "quiz" },
     { date: "2026-11-04", subject: "Biology", text: "Comp Check", type: "quiz" },
-    { date: "2026-11-05", subject: "English", text: "Tuck Everlasting Vocab Quiz (quiz number hard to read on the scan, looked like \"II(4)\"; date taken from \"Thursday\" on the board)", type: "quiz" }
+    { date: "2026-11-05", subject: "English", text: "Tuck Everlasting Vocab Quiz (quiz number hard to read on the scan, looked like \"II(4)\"; date taken from \"Thursday\" on the board)", type: "quiz" },
+    { date: "2026-11-05", subject: "Chemistry", text: "Unit 3 Test (the printed date was smudged on the 11/4 scan, inferred from \"Thursday\")", type: "test" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-03T18:09:04-07:00";
+  const LAST_CHECKED = "2026-11-04T16:15:00-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-03",
+    date: "2026-11-04",
     note: "",
     board: [
-      { subject: "Writing", agenda: "Timed writing practice", homework: "Finish today's timed writing (the prompt was about your greatest accomplishment, 2-3 paragraphs). No handouts or dates noted." },
-      { subject: "Electives", agenda: "Scan was too garbled on this period to make out the agenda.", homework: "Nothing legible on the scan for homework either." },
-      { subject: "English", agenda: "Tuck Everlasting reading comprehension questions", homework: "Tuck Everlasting vocab packet. There's also a vocab quiz noted for Thursday (11/5), though the quiz number was hard to read on the scan (looked like \"II(4)\")." },
-      { subject: "Chemistry", agenda: "Review game", homework: "Study the study guide. No specific test date was listed on today's scan." },
-      { subject: "History", agenda: "Rome", homework: "Weekly Packet & Reading Guide due tomorrow (Wed 11/4). A Reading Check is also noted, which looks like it lands the same day." },
-      { subject: "Pre-Algebra", agenda: "6-6: Solving two-step inequalities", homework: "6-6 Additional Practice. No new dates noted today; the Topic 5 and 6 Quiz already on the calendar for Friday 11/6 still stands." },
-      { subject: "Biology", agenda: "Immune System", homework: "Study! A Comp Check is noted for Wednesday, November 4th." }
+      { subject: "English Writing", agenda: "Timed writing practice", homework: "Complete the timed writing. No handouts or dates noted." },
+      { subject: "Electives", agenda: "Scan was too garbled on this period to make out the agenda, just a date and a stray fun fact about camels came through.", homework: "Nothing legible on the scan for homework either." },
+      { subject: "English", agenda: "Tuck Everlasting comprehension questions, review", homework: "Study. Vocab quiz Thursday 11/5 is already on the calendar (quiz number hard to read on the scan)." },
+      { subject: "Chemistry", agenda: "Kahoot review game", homework: "Study. A Unit 3 Test is noted for Thursday 11/5 (the printed date was smudged on the scan, so the day of week was used); just added to the calendar." },
+      { subject: "History", agenda: "Battle of Cannae video", homework: "Reading guide. There's also something listed for \"Friday\" in the announcements field, but it was too garbled to tell what it is, so it wasn't added to the calendar." },
+      { subject: "Pre-Algebra", agenda: "6-7: Solving inequalities using the distributive property", homework: "6-7 Additional Practice. The Topic 5 and 6 Quiz already on the calendar for Friday 11/6 still stands." },
+      { subject: "Biology", agenda: "Respiratory system", homework: "None tonight!" }
     ]
   };
 
