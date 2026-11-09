@@ -584,25 +584,27 @@
     { date: "2026-11-04", subject: "History", text: "Reading Check (no explicit date printed on the scan, grouped with the 11/4 homework so assumed same day)", type: "quiz" },
     { date: "2026-11-04", subject: "Biology", text: "Comp Check", type: "quiz" },
     { date: "2026-11-05", subject: "English", text: "Tuck Everlasting Vocab Quiz IV (4)", type: "quiz" },
-    { date: "2026-11-05", subject: "Chemistry", text: "Unit 3 Test", type: "test" }
+    { date: "2026-11-05", subject: "Chemistry", text: "Unit 3 Test", type: "test" },
+    { date: "2026-11-13", subject: "Pre-Algebra", text: "Test through Topic 6", type: "test" },
+    { date: "2026-11-16", subject: "English", text: "Tuck Everlasting Test 4", type: "test" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-09T16:09:49-07:00";
+  const LAST_CHECKED = "2026-11-09T16:44:00-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-06",
+    date: "2026-11-09",
     note: "",
     board: [
-      { subject: "PE", agenda: "Went outside: volleyball, soccer, or walking.", homework: "None." },
-      { subject: "Electives", agenda: "Left blank (question marks on the sheet).", homework: "Left blank (question marks on the sheet)." },
-      { subject: "English", agenda: "Tuck Everlasting comprehension questions, pronouns.", homework: "Finish Tuck Everlasting. Announcement: \"Tuck Everlasting: Test IV (4)\", no date given yet. Handout: Daily Grammar quiz for Lessons 16 to 20 (Parts of Speech: Nouns)." },
-      { subject: "Chemistry", agenda: "Video.", homework: "None." },
-      { subject: "History", agenda: "Rome! Handout: \"The Roman Achievement\" section summary (Chapter 5, Section 3).", homework: "Study! Codes on the sheet: Rome 00963167 (the same code as the 10/30 Rome test) and Maps (hard to read: 00745031 or 007445031). Announcements: Weekly Packet Test and Roman Test, no dates given yet." },
-      { subject: "Pre-Algebra", agenda: "Quiz, no calculator (matches the Topic 5 and 6 Quiz already listed for today).", homework: "Enjoy your weekend (no homework). Announcement: Test on Topic 6, no calculator, no date given yet." },
-      { subject: "Biology", agenda: "Respiratory System.", homework: "None." }
+      { subject: "PE", agenda: "Dodgeball.", homework: "None listed." },
+      { subject: "Electives", agenda: "Left blank on the sheet.", homework: "Left blank on the sheet." },
+      { subject: "English", agenda: "Tuck Everlasting reading discussion, plot diagram, pronouns.", homework: "Study for Tuck Everlasting (study guide included). Announcement: \"Test 4: Tuck, on Monday the 16th.\"" },
+      { subject: "Chemistry", agenda: "Practice Comp / Pre-Comp.", homework: "Study." },
+      { subject: "History", agenda: "Rome.", homework: "Study! Codes on the sheet: Rome 00963167-ish and Maps (hard to read). The announcements box here was garbled on the scan, looks like it mentions a weekly packet test on Thursday and a Rome test \"next week,\" but no clear exact dates, worth confirming with him." },
+      { subject: "Pre-Algebra", agenda: "Solving equations with variables on both sides.", homework: "7-2: Additional Practice. Attached weekly sheet reminders: no school Wednesday 11/11 (Veterans Day), and a test through Topic 6 on Thursday 11/13." },
+      { subject: "Biology", agenda: "Respiratory System.", homework: "Study!" }
     ]
   };
 
