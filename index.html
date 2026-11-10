@@ -585,8 +585,9 @@
     { date: "2026-11-04", subject: "Biology", text: "Comp Check", type: "quiz" },
     { date: "2026-11-05", subject: "English", text: "Tuck Everlasting Vocab Quiz IV (4)", type: "quiz" },
     { date: "2026-11-05", subject: "Chemistry", text: "Unit 3 Test", type: "test" },
-    { date: "2026-11-13", subject: "Pre-Algebra", text: "Test through Topic 6", type: "test" },
-    { date: "2026-11-16", subject: "English", text: "Tuck Everlasting Test 4", type: "test" }
+    { date: "2026-11-12", subject: "History", text: "Weekly Packet Test", type: "test" },
+    { date: "2026-11-13", subject: "Pre-Algebra", text: "Test through Topic 6 (no calculator)", type: "test" },
+    { date: "2026-11-16", subject: "English", text: "Tuck Everlasting Test IV (whole book, Prologue to Epilogue)", type: "test" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
@@ -596,15 +597,15 @@
 
   const LATEST_SYNC = {
     date: "2026-11-09",
-    note: "",
+    note: "Tip written on today's sheet: Start studying for Pre-Comps now!",
     board: [
-      { subject: "PE", agenda: "Dodgeball.", homework: "None listed." },
-      { subject: "Electives", agenda: "Left blank on the sheet.", homework: "Left blank on the sheet." },
-      { subject: "English", agenda: "Tuck Everlasting reading discussion, plot diagram, pronouns.", homework: "Study for Tuck Everlasting (study guide included). Announcement: \"Test 4: Tuck, on Monday the 16th.\"" },
-      { subject: "Chemistry", agenda: "Practice Comp / Pre-Comp.", homework: "Study." },
-      { subject: "History", agenda: "Rome.", homework: "Study! Codes on the sheet: Rome 00963167-ish and Maps (hard to read). The announcements box here was garbled on the scan, looks like it mentions a weekly packet test on Thursday and a Rome test \"next week,\" but no clear exact dates, worth confirming with him." },
-      { subject: "Pre-Algebra", agenda: "Solving equations with variables on both sides.", homework: "7-2: Additional Practice. Attached weekly sheet reminders: no school Wednesday 11/11 (Veterans Day), and a test through Topic 6 on Thursday 11/13." },
-      { subject: "Biology", agenda: "Respiratory System.", homework: "Study!" }
+      { subject: "PE", agenda: "Dodgeball.", homework: "None." },
+      { subject: "Electives", agenda: "Left blank (question marks on the sheet).", homework: "Left blank (question marks on the sheet)." },
+      { subject: "English", agenda: "Tuck Everlasting reading discussion, plot diagram, pronouns.", homework: "Tuck Everlasting: study, study guide, plot diagram. Announcement: Test 4 on Tuck, Monday 11/16. Handouts: Test IV Study Guide (Prologue to Epilogue), Plot Structure Diagram, Daily Grammar Lesson 23 (possessive pronouns)." },
+      { subject: "Chemistry", agenda: "Practice Comp / Pre Comp.", homework: "Study." },
+      { subject: "History", agenda: "Rome. Handout: \"The Rise of Christianity\" section summary (Chapter 5, Section 4).", homework: "Study! Kahoot codes: Rome 00963167, Maps 007445031. Announcements: Weekly Packet Test on Thursday 11/12. Rome Test next week, no day given yet." },
+      { subject: "Pre-Algebra", agenda: "Solve equations with variables on both sides.", homework: "7-2 Additional Practice. Last week's weekly sheet (Nov 2 to 6) lists: no school Wednesday 11/11, and a test through Topic 6 on Friday 11/13." },
+      { subject: "Biology", agenda: "Respiratory System. Handout: Respiratory System Structures worksheet.", homework: "Study!" }
     ]
   };
 
