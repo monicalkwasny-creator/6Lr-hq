@@ -587,25 +587,29 @@
     { date: "2026-11-05", subject: "Chemistry", text: "Unit 3 Test", type: "test" },
     { date: "2026-11-12", subject: "History", text: "Weekly Packet Test", type: "test" },
     { date: "2026-11-13", subject: "Pre-Algebra", text: "Test through Topic 6 (no calculator)", type: "test" },
-    { date: "2026-11-16", subject: "English", text: "Tuck Everlasting Test IV (whole book, Prologue to Epilogue)", type: "test" }
+    { date: "2026-11-16", subject: "English", text: "Tuck Everlasting Test IV (whole book, Prologue to Epilogue)", type: "test" },
+    { date: "2026-11-11", subject: "History", text: "Weekly packet due (board said \"Wednesday,\" but there's no school 11/11 since it's Veterans Day, worth confirming with the teacher)", type: "homework" },
+    { date: "2026-11-12", subject: "English", text: "Coordinating conjunctions worksheet due", type: "homework" },
+    { date: "2026-11-12", subject: "English", text: "Tuck Everlasting plot diagram due", type: "homework" },
+    { date: "2026-11-12", subject: "Pre-Algebra", text: "Homework due (board just said \"Th.\")", type: "homework" },
+    { date: "2026-11-13", subject: "English", text: "Tuck Everlasting study guide due", type: "homework" },
+    { date: "2026-11-16", subject: "Biology", text: "Respiratory System Quiz (board said \"Monday\" with no exact date given, assumed 11/16 to match the pattern of other Monday items this week, worth confirming)", type: "quiz" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-10T16:12:28-07:00";
+  const LAST_CHECKED = "2026-11-10T16:14:00-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-09",
-    note: "Tip written on today's sheet: Start studying for Pre-Comps now!",
+    date: "2026-11-10",
     board: [
-      { subject: "PE", agenda: "Dodgeball.", homework: "None." },
-      { subject: "Electives", agenda: "Left blank (question marks on the sheet).", homework: "Left blank (question marks on the sheet)." },
-      { subject: "English", agenda: "Tuck Everlasting reading discussion, plot diagram, pronouns.", homework: "Tuck Everlasting: study, study guide, plot diagram. Announcement: Test 4 on Tuck, Monday 11/16. Handouts: Test IV Study Guide (Prologue to Epilogue), Plot Structure Diagram, Daily Grammar Lesson 23 (possessive pronouns)." },
-      { subject: "Chemistry", agenda: "Practice Comp / Pre Comp.", homework: "Study." },
-      { subject: "History", agenda: "Rome. Handout: \"The Rise of Christianity\" section summary (Chapter 5, Section 4).", homework: "Study! Kahoot codes: Rome 00963167, Maps 007445031. Announcements: Weekly Packet Test on Thursday 11/12. Rome Test next week, no day given yet." },
-      { subject: "Pre-Algebra", agenda: "Solve equations with variables on both sides.", homework: "7-2 Additional Practice. Last week's weekly sheet (Nov 2 to 6) lists: no school Wednesday 11/11, and a test through Topic 6 on Friday 11/13." },
-      { subject: "Biology", agenda: "Respiratory System. Handout: Respiratory System Structures worksheet.", homework: "Study!" }
+      { subject: "Writing", agenda: "Letter writing.", homework: "Complete final draft of letter." },
+      { subject: "English", agenda: "Tuck Everlasting reading discussion, plot diagram, pronouns.", homework: "Coordinating conjunctions worksheet due 11/12. Tuck Everlasting plot diagram due 11/12. Tuck Everlasting study guide due 11/13. Announcement: Tuck test Monday 11/16 (already on the calendar)." },
+      { subject: "Chemistry", agenda: "Video (the rest of the agenda was too messy to make out).", homework: "None listed. Handouts: a Properties of Matter worksheet and a video worksheet on physical/chemical changes." },
+      { subject: "History", agenda: "Rome.", homework: "Weekly packet due Wednesday (there's no school 11/11 though, since it's Veterans Day, so worth confirming with the teacher). Announcements: Weekly Packet Test Thursday 11/12. Rome Test next week, no exact day given yet." },
+      { subject: "Pre-Algebra", agenda: "Stations.", homework: "Due Thursday. Announcement: Test through Topic 6 on Friday 11/13 (already on the calendar)." },
+      { subject: "Biology", agenda: "Respiratory system.", homework: "None. Announcement: a quiz Monday, no exact date given, put on the calendar for 11/16 as a best guess, worth confirming." }
     ]
   };
 
