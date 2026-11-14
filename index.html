@@ -593,24 +593,24 @@
     { date: "2026-11-12", subject: "English", text: "Tuck Everlasting plot diagram due", type: "homework" },
     { date: "2026-11-12", subject: "Pre-Algebra", text: "Homework due (board just said \"Th.\")", type: "homework" },
     { date: "2026-11-13", subject: "English", text: "Tuck Everlasting study guide due", type: "homework" },
-    { date: "2026-11-16", subject: "Biology", text: "Test (the 11/12 sheet says \"test Monday\"; the 11/10 sheet said \"quiz Monday\")", type: "test" }
+    { date: "2026-11-16", subject: "Biology", text: "Test (the 11/12 sheet says \"test Monday\", the 11/10 sheet said \"quiz Monday\", and the 11/13 sheet calls it a \"comp check\" - three different labels now for what's probably the same Monday assessment, worth double checking with the teacher)", type: "test" },
+    { date: "2026-11-16", subject: "History", text: "Reading Check", type: "quiz" },
+    { date: "2026-11-18", subject: "History", text: "Weekly Packet due", type: "homework" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-13T16:11:51-07:00";
+  const LAST_CHECKED = "2026-11-13T17:12:07-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-12",
-    note: "Also in today's packet, with no class written on them: reflexive and intensive pronoun worksheets (Part I and Part II) and Daily Grammar Lesson 24 on reflexive pronouns. No due date written.",
+    date: "2026-11-13",
     board: [
-      { subject: "Writing", agenda: "Letter writing response.", homework: "Complete the response. Handout: Tuck Everlasting Letter. Work with a partner, read your partner's letter and respond to it, 2 paragraphs minimum (5 to 7 sixth grade level sentences), with a salutation and closing." },
-      { subject: "English", agenda: "Tuck Everlasting discussion.", homework: "Study guide for the Tuck test. Announcement: Tuck Everlasting Test 4 is Monday 11/16 (already on the calendar)." },
-      { subject: "Chemistry", agenda: "Review practice comp.", homework: "None." },
-      { subject: "History", agenda: "Test (today's Weekly Packet Test).", homework: "None. Handouts: Chapter 9, Section 1, The Byzantine Empire (textbook pages 281 to 288) and its Reading Guide (10 questions plus Terms, People and Places). No due date written." },
-      { subject: "Pre-Algebra", agenda: "Working through equations with infinite, no, or one solution (Topic 6-4).", homework: "Topic 6-4 additional practice. Announcement: Test through Topic 6 is tomorrow, Friday 11/13 (already on the calendar)." },
-      { subject: "Biology", agenda: "Respiratory system.", homework: "None. Announcement: test Monday 11/16 (the 11/10 sheet said quiz, today's says test)." }
+      { subject: "English", agenda: "Tuck Everlasting review (the scan also had something about pronouns here, but it wasn't legible).", homework: "Study for the Tuck Everlasting test. Announcement: test is Monday 11/16 (already on the calendar)." },
+      { subject: "Chemistry", agenda: "Jeopardy review game.", homework: "None." },
+      { subject: "History", agenda: "Rome.", homework: "Weekly packet due Wednesday 11/18 (already on the calendar). Announcement: reading check Monday 11/16 (already on the calendar), plus a test mentioned for \"next week\" with no specific date given yet." },
+      { subject: "Pre-Algebra", agenda: "Test through Topic 6 (today's test, already on the calendar).", homework: "None." },
+      { subject: "Biology", agenda: "Respiratory system.", homework: "None. Announcement: \"comp check\" Monday 11/16 (the 11/12 sheet called it a test, the 11/10 sheet called it a quiz - worth checking with the teacher which it really is)." }
     ]
   };
 
