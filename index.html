@@ -595,22 +595,26 @@
     { date: "2026-11-13", subject: "English", text: "Tuck Everlasting study guide due", type: "homework" },
     { date: "2026-11-16", subject: "Biology", text: "Test (the 11/12 sheet says \"test Monday\", the 11/10 sheet said \"quiz Monday\", and the 11/13 sheet calls it a \"comp check\" - three different labels now for what's probably the same Monday assessment, worth double checking with the teacher)", type: "test" },
     { date: "2026-11-16", subject: "History", text: "Reading Check", type: "quiz" },
-    { date: "2026-11-18", subject: "History", text: "Weekly Packet due", type: "homework" }
+    { date: "2026-11-18", subject: "History", text: "Weekly Packet due", type: "homework" },
+    { date: "2026-11-24", subject: "Pre-Algebra", text: "Topic 7 Quiz", type: "quiz" },
+    { date: "2026-12-15", subject: "All Classes", text: "Precomps (Dec 15-16)", type: "schedule" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-13T18:12:23-07:00";
+  const LAST_CHECKED = "2026-11-16T16:11:23-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-13",
+    date: "2026-11-16",
     board: [
-      { subject: "English", agenda: "Tuck Everlasting review (the scan also had something about pronouns here, but it wasn't legible).", homework: "Study for the Tuck Everlasting test. Announcement: test is Monday 11/16 (already on the calendar)." },
-      { subject: "Chemistry", agenda: "Jeopardy review game.", homework: "None." },
-      { subject: "History", agenda: "Rome.", homework: "Weekly packet due Wednesday 11/18 (already on the calendar). Announcement: reading check Monday 11/16 (already on the calendar), plus a test mentioned for \"next week\" with no specific date given yet." },
-      { subject: "Pre-Algebra", agenda: "Test through Topic 6 (today's test, already on the calendar).", homework: "None." },
-      { subject: "Biology", agenda: "Respiratory system.", homework: "None. Announcement: \"comp check\" Monday 11/16 (the 11/12 sheet called it a test, the 11/10 sheet called it a quiz - worth checking with the teacher which it really is)." }
+      { subject: "Physical Education", agenda: "Sproutball.", homework: "None." },
+      { subject: "Electives", agenda: "Not filled in on today's scan.", homework: "None." },
+      { subject: "English", agenda: "Tuck Everlasting Test (today's test, already on the calendar).", homework: "Metaphors worksheet." },
+      { subject: "Chemistry", agenda: "Relay review.", homework: "Pre-Comp study guide." },
+      { subject: "History", agenda: "Rome.", homework: "Weekly packet due Wednesday 11/18 (already on the calendar). Study Rome. The announcements field was hard to make out, something like \"Thur/Fri rest may be on Weekly Bt\" - unclear, worth asking the teacher." },
+      { subject: "Pre-Algebra", agenda: "Compare Proportional Relationships.", homework: "7-5 Additional Practice. This week's schedule per the attached sheet: Tue 7-6, Wed 7-7, Thu 7-8. Reminders: Topic 7 Quiz Nov 24 (added to the calendar), Thanksgiving Break Nov 25-30 (already on the calendar), Precomps Dec 15-16 (added to the calendar)." },
+      { subject: "Biology", agenda: "Digestive system.", homework: "None noted." }
     ]
   };
 
