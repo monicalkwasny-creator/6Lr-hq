@@ -597,7 +597,9 @@
     { date: "2026-11-16", subject: "History", text: "Reading Check", type: "quiz" },
     { date: "2026-11-18", subject: "History", text: "Weekly Packet due", type: "homework" },
     { date: "2026-11-24", subject: "Pre-Algebra", text: "Topic 7 Quiz", type: "quiz" },
-    { date: "2026-12-15", subject: "All Classes", text: "Precomps (Dec 15-16)", type: "schedule" }
+    { date: "2026-12-15", subject: "All Classes", text: "Precomps (Dec 15-16)", type: "schedule" },
+    { date: "2026-11-18", subject: "Chemistry", text: "Pre-Comp #2 practice due", type: "homework" },
+    { date: "2026-11-19", subject: "History", text: "Rome test (board says \"Thursday Friday\" - not clear which day, could be 11/19 or 11/20)", type: "test" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
@@ -606,15 +608,15 @@
   const LAST_CHECKED = "2026-11-17T16:12:19-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-16",
+    date: "2026-11-17",
     board: [
-      { subject: "Physical Education", agenda: "Sproutball.", homework: "None." },
-      { subject: "Electives", agenda: "Not filled in on today's scan.", homework: "None." },
-      { subject: "English", agenda: "Tuck Everlasting Test (today's test, already on the calendar).", homework: "Metaphors worksheet." },
-      { subject: "Chemistry", agenda: "Relay review.", homework: "Pre-Comp study guide." },
-      { subject: "History", agenda: "Rome.", homework: "Weekly packet due Wednesday 11/18 (already on the calendar). Study Rome. The announcements field was hard to make out, something like \"Thur/Fri rest may be on Weekly Bt\" - unclear, worth asking the teacher." },
-      { subject: "Pre-Algebra", agenda: "Compare Proportional Relationships.", homework: "7-5 Additional Practice. This week's schedule per the attached sheet: Tue 7-6, Wed 7-7, Thu 7-8. Reminders: Topic 7 Quiz Nov 24 (added to the calendar), Thanksgiving Break Nov 25-30 (already on the calendar), Precomps Dec 15-16 (added to the calendar)." },
-      { subject: "Biology", agenda: "Digestive system.", homework: "None noted." }
+      { subject: "Writing", agenda: "Practice.", homework: "Finish practice." },
+      { subject: "Electives", agenda: "Not filled in on today's scan.", homework: "None noted." },
+      { subject: "English", agenda: "Reading comprehension review.", homework: "Metaphors worksheet (similes & metaphors packet sent home)." },
+      { subject: "Chemistry", agenda: "Practice Pre-Comp #2.", homework: "Due tomorrow 11/18 (added to the calendar)." },
+      { subject: "History", agenda: "Rome.", homework: "Study Rome. Announcements field says \"Test on Thursday Friday\" - not clear which day, could be 11/19 or 11/20 (already on the calendar as uncertain)." },
+      { subject: "Pre-Algebra", agenda: "Connecting proportional relationships & slope.", homework: "7-6 Additional Practice. Reminder: Topic 7 Quiz Nov 24 (already on the calendar)." },
+      { subject: "Biology", agenda: "Digestive system.", homework: "Study." }
     ]
   };
 
