@@ -599,24 +599,25 @@
     { date: "2026-11-24", subject: "Pre-Algebra", text: "Topic 7 Quiz", type: "quiz" },
     { date: "2026-12-15", subject: "All Classes", text: "Precomps (Dec 15-16)", type: "schedule" },
     { date: "2026-11-18", subject: "Chemistry", text: "Pre-Comp #2 practice due", type: "homework" },
-    { date: "2026-11-19", subject: "History", text: "Rome test (board says \"Thursday Friday\" - not clear which day, could be 11/19 or 11/20)", type: "test" }
+    { date: "2026-11-20", subject: "History", text: "Rome test (the 11/18 board now says \"Friday Monday Test\" - still not clear which day, could be 11/20 or 11/23; updates the earlier \"Thursday Friday\" guess)", type: "test" },
+    { date: "2026-11-19", subject: "Biology", text: "Comp Check (Digestive System)", type: "quiz" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-17T18:09:19-07:00";
+  const LAST_CHECKED = "2026-11-18T16:13:47-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-17",
+    date: "2026-11-18",
     board: [
-      { subject: "Writing", agenda: "Practice.", homework: "Finish practice." },
-      { subject: "Electives", agenda: "Not filled in on today's scan.", homework: "None noted." },
-      { subject: "English", agenda: "Reading comprehension review.", homework: "Metaphors worksheet (similes & metaphors packet sent home)." },
-      { subject: "Chemistry", agenda: "Practice Pre-Comp #2.", homework: "Due tomorrow 11/18 (added to the calendar)." },
-      { subject: "History", agenda: "Rome.", homework: "Study Rome. Announcements field says \"Test on Thursday Friday\" - not clear which day, could be 11/19 or 11/20 (already on the calendar as uncertain)." },
-      { subject: "Pre-Algebra", agenda: "Connecting proportional relationships & slope.", homework: "7-6 Additional Practice. Reminder: Topic 7 Quiz Nov 24 (already on the calendar)." },
-      { subject: "Biology", agenda: "Digestive system.", homework: "Study." }
+      { subject: "Writing", agenda: "Timed Writing.", homework: "Finish timed writing practice (if not finished)." },
+      { subject: "Electives", agenda: "Hard to read on today's scan (looked like \"Cutch!\" - genuinely not legible).", homework: "None noted." },
+      { subject: "English", agenda: "Study Guide & Review.", homework: "None noted." },
+      { subject: "Chemistry", agenda: "Review Practice Comp #2.", homework: "Lab prep and a packet/worksheet (the first part of the homework note was hard to read on the scan)." },
+      { subject: "History", agenda: "The Byzantine Empire!", homework: "Study! Kahoot codes: Rome 00963167, Maps 667445031. Announcements say \"Friday Monday Test\" - unclear which day, could be 11/20 or 11/23 (updated on the calendar as still uncertain)." },
+      { subject: "Pre-Algebra", agenda: "7-7: Analyze Linear Equations (y = mx).", homework: "Additional Practice for 7-7. Reminder: Topic 7 Quiz Nov 24 (already on the calendar)." },
+      { subject: "Biology", agenda: "Digestive System!", homework: "Study! Comp Check due tomorrow, 11/19 (added to the calendar)." }
     ]
   };
 
