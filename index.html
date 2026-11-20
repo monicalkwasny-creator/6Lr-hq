@@ -600,24 +600,26 @@
     { date: "2026-12-15", subject: "All Classes", text: "Precomps (Dec 15-16)", type: "schedule" },
     { date: "2026-11-18", subject: "Chemistry", text: "Pre-Comp #2 practice due", type: "homework" },
     { date: "2026-11-20", subject: "History", text: "Rome test (the 11/18 board now says \"Friday Monday Test\" - still not clear which day, could be 11/20 or 11/23; updates the earlier \"Thursday Friday\" guess)", type: "test" },
-    { date: "2026-11-19", subject: "Biology", text: "Comp Check (Digestive System)", type: "quiz" }
+    { date: "2026-11-19", subject: "Biology", text: "Comp Check (Digestive System)", type: "quiz" },
+    { date: "2026-11-20", subject: "History", text: "Bring Pre-Comp Study Guide (board said tomorrow and going forward)", type: "homework" },
+    { date: "2026-11-23", subject: "English", text: "Literary Language (the 11/19 board just gives the date and topic name, not whether it's a lesson or a quiz)", type: "schedule" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-19T16:12:25-07:00";
+  const LAST_CHECKED = "2026-11-19T17:11:47-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-18",
+    date: "2026-11-19",
     board: [
-      { subject: "Writing", agenda: "Timed Writing.", homework: "Finish timed writing practice (if not finished)." },
-      { subject: "Electives", agenda: "Hard to read on today's scan (looked like \"Cutch!\" - genuinely not legible).", homework: "None noted." },
-      { subject: "English", agenda: "Study Guide & Review.", homework: "None noted." },
-      { subject: "Chemistry", agenda: "Review Practice Comp #2.", homework: "Lab prep and a packet/worksheet (the first part of the homework note was hard to read on the scan)." },
-      { subject: "History", agenda: "The Byzantine Empire!", homework: "Study! Kahoot codes: Rome 00963167, Maps 667445031. Announcements say \"Friday Monday Test\" - unclear which day, could be 11/20 or 11/23 (updated on the calendar as still uncertain)." },
-      { subject: "Pre-Algebra", agenda: "7-7: Analyze Linear Equations (y = mx).", homework: "Additional Practice for 7-7. Reminder: Topic 7 Quiz Nov 24 (already on the calendar)." },
-      { subject: "Biology", agenda: "Digestive System!", homework: "Study! Comp Check due tomorrow, 11/19 (added to the calendar)." }
+      { subject: "Writing", agenda: "Timed Writing Practice!", homework: "Finish Timed Writing Practice (if not done)." },
+      { subject: "Electives", agenda: "Illegible on today's scan (just a single word or symbol, genuinely not legible).", homework: "None noted." },
+      { subject: "English", agenda: "Comp Check: Characters (reading comprehension).", homework: "Personification worksheet. Announcement: \"Literary Language\" Monday, Nov. 23 (added to the calendar; board doesn't say if it's a lesson or a quiz)." },
+      { subject: "Chemistry", agenda: "Mixtures Lab.", homework: "Wear PPE (safety gear) tomorrow!" },
+      { subject: "History", agenda: "The Byzantine Empire.", homework: "Bring Pre-Comp Study Guide tomorrow and going forward. The Rome test date (Friday or Monday) is still unresolved on the calendar." },
+      { subject: "Pre-Algebra", agenda: "7-8: Understand y-intercept of a line.", homework: "7-8 Additional Practice." },
+      { subject: "Biology", agenda: "Digestive System. Comp Check happened today.", homework: "Study! There's a note about another upcoming comp check, but that part of the handwriting is too garbled to make out a date." }
     ]
   };
 
