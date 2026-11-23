@@ -602,25 +602,19 @@
     { date: "2026-11-20", subject: "History", text: "Rome test (the 11/18 board now says \"Friday Monday Test\" - still not clear which day, could be 11/20 or 11/23; updates the earlier \"Thursday Friday\" guess)", type: "test" },
     { date: "2026-11-19", subject: "Biology", text: "Comp Check (Digestive System)", type: "quiz" },
     { date: "2026-11-20", subject: "History", text: "Bring Pre-Comp Study Guide (board said tomorrow and going forward)", type: "homework" },
-    { date: "2026-11-23", subject: "English", text: "Literary Language (the 11/19 board just gives the date and topic name, not whether it's a lesson or a quiz)", type: "schedule" }
+    { date: "2026-11-23", subject: "English", text: "Literary Language (the 11/19 board just gives the date and topic name, not whether it's a lesson or a quiz)", type: "schedule" },
+    { date: "2026-11-23", subject: "All Classes", text: "No homework board posted for 11/23-11/24 (per the homework helper's note, not a scanned board)", type: "schedule" }
   ];
 
   // Single source of truth for a sync: the date and that day's board live in one
   // object on purpose, so refreshing the board content can't drift from the
   // "Last board synced" label the way BOARD_DATE/RECENT_BOARD once did as separate consts.
-  const LAST_CHECKED = "2026-11-23T16:12:07-07:00";
+  const LAST_CHECKED = "2026-11-23T16:38:31-07:00";
 
   const LATEST_SYNC = {
-    date: "2026-11-20",
-    board: [
-      { subject: "Physical Education", agenda: "Soccer.", homework: "None." },
-      { subject: "Electives", agenda: "Today's scan mostly just has a \"have an awesome weekend!\" note here, no real class content legible in this field.", homework: "None noted." },
-      { subject: "English", agenda: "Reading: comprehension/characters work, tied to the attached CommonLit \"Button, Button\" packet.", homework: "Finish the comprehension/characters study guide." },
-      { subject: "Chemistry", agenda: "Separating Mixtures Lab, Part 2.", homework: "None noted." },
-      { subject: "History", agenda: "\"Day of Awesomeness!\" (a fun class day, no specific lesson content noted). No mention of the Rome test on today's board, so that date is still unresolved.", homework: "None noted." },
-      { subject: "Pre-Algebra", agenda: "Graph review.", homework: "Study for the Topic 7 quiz, confirmed for Tuesday 11/24." },
-      { subject: "Biology", agenda: "Nothing legible beyond the subject name on today's scan.", homework: "None noted." }
-    ]
+    date: "2026-11-23",
+    note: "No homework board today: the homework helper posted a note (not a scanned board) saying there's no 6LR homework board for Monday 11/23 or Tuesday 11/24.",
+    board: []
   };
 
   function parseLocalDate(iso) {
